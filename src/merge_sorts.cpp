@@ -60,20 +60,20 @@ void hybridMergeSortImpl(std::vector<int>& data, std::vector<int>& buffer, std::
     hybridMergeSortImpl(data, buffer, mid, right, threshold);
     merge(data, buffer, left, mid, right);
 }
-} // namespace
-
-void mergeSort(std::vector<int>& data) {
-    if (data.empty()) {
-        return;
-    }
-    std::vector<int> buffer(data.size());
-    mergeSortImpl(data, buffer, 0, data.size());
 }
 
-void hybridMergeSort(std::vector<int>& data, std::size_t threshold) {
-    if (data.empty()) {
-        return;
-    }
-    std::vector<int> buffer(data.size());
-    hybridMergeSortImpl(data, buffer, 0, data.size(), threshold);
-}
+  void mergeSort(std::vector<int>& data) {
+      if (data.empty()) {
+          return;
+      }
+      std::vector<int> buffer(data.size());
+      mergeSortImpl(data, buffer, 0, data.size());
+  }
+
+  void hybridMergeSort(std::vector<int>& data, std::size_t threshold) {
+      if (data.empty()) {
+          return;
+      }
+      std::vector<int> buffer(data.size());
+      hybridMergeSortImpl(data, buffer, 0, data.size(), threshold);
+  }
