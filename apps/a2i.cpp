@@ -8,14 +8,12 @@ int main() {
     std::cin.tie(nullptr);
 
     int n;
-    if (!(std::cin >> n)) {
-        return 0;
-    }
+    std::cin >> n;
     std::vector<int> data(n);
     for (int i = 0; i < n; ++i) {
         std::cin >> data[i];
     }
-    hybridMergeSort(data, 15);
+    hybridMergeSort(data, 30);
     for (int i = 0; i < n; ++i) {
         if (i) {
             std::cout << ' ';
