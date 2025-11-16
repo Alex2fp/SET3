@@ -15,13 +15,13 @@ g++ -std=c++20 -O2 -I../include ../apps/analysis.cpp \
 g++ -std=c++20 -O2 -I../include ../apps/a2i.cpp ../src/merge_sorts.cpp -o a2i
 ```
 
-## Запуск эксперимента (задача A2)
+## Запуск эксперимента
 ```bash
 ./analysis
 ```
 Программа выведет сводную статистику по категориям данных и сохранит полные замеры в `results/measurements.csv`.
 
-## Использование решения A2i
+## Использование решения
 ```bash
 ./a2i < input.txt > output.txt
 ```
