@@ -25,7 +25,7 @@ public:
         const std::vector<std::size_t>& sizes);
 
     static std::vector<std::size_t> defaultSizes(std::size_t min = 500,
-                                                 std::size_t max = 100'000,
+                                                 std::size_t max = 100000,
                                                  std::size_t step = 100);
 
     static std::string datasetName(DatasetType type);
