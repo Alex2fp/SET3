@@ -5,4 +5,4 @@
 
 void mergeSort(std::vector<int>& data);
 
-void hybridMergeSort(std::vector<int>& data, std::size_t threshold = 15);
+void hybridMergeSort(std::vector<int>& data, std::size_t threshold = 30);
