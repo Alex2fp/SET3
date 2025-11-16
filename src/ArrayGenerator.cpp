@@ -4,8 +4,8 @@
 #include <numeric>
 
 namespace {
-constexpr int kMinValue = -1'000'000'000;
-constexpr int kMaxValue = 1'000'000'000;
+constexpr int kMinValue = -1e9;
+constexpr int kMaxValue = 1e9;
 }
 
 ArrayGenerator::ArrayGenerator()
